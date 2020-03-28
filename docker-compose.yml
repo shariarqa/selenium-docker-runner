@@ -19,7 +19,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes:
-      - ./search-result ./usr/share/app/test-output
+      - ./search-result ./usr/share/udemy/test-output
   book-flight:
     image: shariarrana/flight
     depends_on:
@@ -29,4 +29,4 @@ services:
       - BROWSER=chrome
       - MODULE=book-flight-module.xml
     volumes:
-      - ./book-result ./usr/share/app/test-output
+      - ./book-result ./usr/share/udemy/test-output
