@@ -20,7 +20,7 @@ services:
       - MODULE=search-module.xml
     volumes:
       - ./search-result .\Personal\personal\Docker
-  book-fligh:
+  book-flight:
     image: shariarrana/flight
     depends_on:
       - chrome
