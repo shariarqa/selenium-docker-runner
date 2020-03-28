@@ -19,7 +19,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes:
-      - ./search-result .\Personal\personal\Docker
+      - ./output/search-result .\Personal\personal\Docker
   book-flight:
     image: shariarrana/flight
     depends_on:
@@ -29,4 +29,4 @@ services:
       - BROWSER=chrome
       - MODULE=book-flight-module.xml
     volumes:
-      - ./book-result .\Personal\personal\Docker
+      - ./output/book-result .\Personal\personal\Docker
