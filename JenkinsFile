@@ -16,7 +16,7 @@ pipeline {
     }
     post{
         always{
-            archiveArtifacts artifacts: "search-result/**"
+            archiveArtifacts artifacts: "output/*.*"
             bat "docker-compose down"
 
         }
